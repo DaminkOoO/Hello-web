@@ -8,7 +8,7 @@
     <meta name="description" content="This website is made to present my car world"/>
     <link rel="stylesheet" href="">
   </head>
-  <body style="background-color: #3a3a3a;color:white"> <!--The Content of html page-->
+  <body style="background-color: #3a3a3a;color:rgb(51, 128, 151)"> <!--The Content of html page-->
     <h1 id="Hi">Hello everyone</h1>
     <a></a><!--anchor link-->
     <!-- <img src="https://i.pinimg.com/originals/e9/1f/2e/e91f2e53a502b8ec1d1eebc66d1acb7f.jpg" alt="screen wallpaper"> -->
@@ -27,11 +27,13 @@
         <input type="text" placeholder="the data is here" required> <!--required : error itha mt3mmarhech kima el passwords-->
         <button type="submit">submit</button> <!--haka kifeh n3melou submit ltext mo3ayna-->
         <label for="indoor"> <!--"for" n5aliw fiha el id elly 7atineh lel radio button-->
-          <input id="indoor" type="radio" name="indoor-outdoor">indoor <!--input selfclosing-->
+          <input id="indoor" type="radio" name="indoor-outdoor" checked>indoor <!--input selfclosing-->
         </label>
-        <label for="outdoor">
-          <input id="outdoor" type="radio" name="indoor-outdoor">outdoor
-        </label>  
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" checked>outdoor</label>
+        <!--n7otou el "checked" bech tkoun already checked with n3mlou zouz checked temchy le5er wa7da-->  
+        <!--'Name' atrb net3mlouha bech ndécalariwha fel js-->
+        <!--'value'atrb nest3mlouha zeda kima el name ama hiya rahi a7san-->
+        <label for="Cats"><input id="Cats" type="checkbox" name="animal"> Loving</label>
       </form>
     
     <a href="#">dead link</a>
