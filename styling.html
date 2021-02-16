@@ -33,17 +33,32 @@
         border-radius: 25%; /* border-radius: t5ali 7wef mt3 el border mdawrin tnajem tkoun pixels ou pourcentage */
     }
     #main-land{ /* nest3mlou el "#" bech nstyliw el id atrb */
-        background-color:rgb(53, 53, 53)
+        background-color:rgb(53, 53, 53);
     }
-    img {
+    .img {
         text-align: center;
     }
+    [type='ul']{ /* fel css najemou ntsyliw  ay naw3 kima el ul or checkboxes etc bel "[type ='ely 7ajtek bih'] */
+        margin:15px 0 0 10px;
+        text-align: left;
+    }
+    .hello{
+        font-size: 1.25em; /* we7det 9ays basé 3al font-size */
+    }
+
 </style>
 <body id="main-land"> <!-- id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice.
                          So please don't give more than one element the same id attribute.-->
     <h1>Hello web styling</h1>
     <h2 class="red-text">Test :=)</h2> <!--el class hiya 7aja kima el variables-->
     <p class="grey_color" >Hello Web design</p>
+    <p class="hello">Hello</p>
     <img class="small-img border" src="https://i.pinimg.com/originals/e9/1f/2e/e91f2e53a502b8ec1d1eebc66d1acb7f.jpg" alt="screen wallpaper">
     <!--fel class tnajem t3mel zouz classet : t7ot espace bin el zouz classet-->
+    <ul>  <!--Ordered List (fiha nwemer 1,2,3 etc)-->
+        <li>Z</li>
+        <li>F</li>
+        <li>x</li>
+    </ul>
+    
 </body>
