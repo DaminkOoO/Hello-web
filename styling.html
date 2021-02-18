@@ -4,6 +4,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"><!--importing a font-->
 </head>
 <style>
+    :root{ /* el root houwa el base mt3 el page kemla*/
+        background:#9af;
+    }
     /*
     tartib el elements fel css:
         1/el inline style (example: <h1 style="color:white;">Hi </h1>)
@@ -12,15 +15,34 @@
         remarque : najmou nestmlou bech n3tiw el priorité lely 7achetna bih "!important" (example"color:skyblue !important")
     */
     body{ /* el default style mt3 el page */
-        color:teal; /* default text color */
+        color:#B8A; /* default text color */
         font-family: monospace; /*default font*/
+    }
+    .Box{
+    background-color: rgb(5, 141, 141);
+                text-align: center;
+                margin: 10px;
+                padding: 5px;
+                width: 700px;
+                color:#ffcc00;
+    }
+    .text-color{
+        color:rgb(255, 70, 70);
+        font-weight: bold; /* t5ali el txt en gras*/
     }
     /* kifeh nest3mlou el variables:
         1/njiw n3mlou el var "--esm el variable:color"
-        2/mb3d nest3mlouh fel ay 7aja (rq:najemou nest3mlou color e5er si el variable invalid)
+        2/mb3d nest3mlouh fel ay 7aja 
+            rq:
+            1/najemou nest3mlou color e5er si el variable invalid
+            2/el old browsers doesn't support the variables so we need to just use the traditional thing
+            3/najmou nbadlou el ely fi west el variable ki n3wadou ndécalirwah fi blasa o5ra
         examples:checkout /examples/variable.html
     */
-
+    h1{
+        text-align: center; /* watha7a t5ali balset el text */
+        color:seagreen;
+    }
     .red-text{ /*nest3mlou el (.) mb3d esm el class bech ndécalirwah*/
         color:rgb(255, 0, 0);
         font-family: Lobster,monospace; /* fel css najmou nestmlou 2 fonts par el "," mb3d el font loula*/
@@ -29,7 +51,7 @@
         color:grey;
     }
     .small-img{
-        width:200px;
+        width:300px;
         padding:20px; /* padding :houwa bo3d element 3al el elements le5er mel de5el */
         /*el padding tnajem tcustimiziha 3al ymin (padding-right)3al ysar (padding-left) elouta(padding-botton) el fou9 (padding-top)
           same shit 3al margin
@@ -47,7 +69,7 @@
     
     }
     #main-land{ /* nest3mlou el "#" bech nstyliw el id atrb */
-        background-color:rgb(53, 53, 53);
+    background-color:rgb(41, 41, 41);
     }
     .img {
         text-align: center;
@@ -69,6 +91,11 @@
     <p class="hello">Hello</p>
     <img class="small-img border" src="https://i.pinimg.com/originals/e9/1f/2e/e91f2e53a502b8ec1d1eebc66d1acb7f.jpg" alt="screen wallpaper">
     <!--fel class tnajem t3mel zouz classet : t7ot espace bin el zouz classet-->
+    <div class="Box">
+        <h2>Google</h2>
+        <hr>
+        <p class="text-color">Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
+    </div>
     <ul>  <!--Ordered List (fiha nwemer 1,2,3 etc)-->
         <li>Z</li>
         <li>F</li>
