@@ -5,7 +5,8 @@
 </head>
 <style>
     :root{ /* el root houwa el base mt3 el page kemla*/
-        background:#9af;
+        background:rgb(5, 141, 141);
+        color:rgb(0, 255, 145)
     }
     /*
     tartib el elements fel css:
@@ -20,14 +21,23 @@
     }
     .Box{
     background-color: rgb(5, 141, 141);
-                text-align: center;
-                margin: 10px;
-                padding: 5px;
-                width: 700px;
-                color:#ffcc00;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 700px;
+    color:#ffcc00;
+/*         The box-shadow property takes values for
+
+            offset-x (how far to push the shadow horizontally from the element),
+            offset-y (how far to push the shadow vertically from the element),
+            blur-radius,
+            spread-radius and
+            color, in that order.
+*/
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     .text-color{
-        color:rgb(255, 70, 70);
+        color:rgb(75, 0, 0);
         font-weight: bold; /* t5ali el txt en gras aka <strong> fel html*/
     }
     /* kifeh nest3mlou el variables:
@@ -41,10 +51,10 @@
     */
     h1{
         text-align: center; /* watha7a t5ali balset el text */
-        color:seagreen;
+        color:rgb(0, 172, 126);
     }
     .red-text{ /*nest3mlou el (.) mb3d esm el class bech ndécalirwah*/
-        color:rgb(255, 0, 0);
+        color:rgb(90, 0, 0);
         font-family: Lobster,monospace; /* fel css najmou nestmlou 2 fonts par el "," mb3d el font loula*/
     }
     .grey_color{
@@ -81,6 +91,9 @@
     .hello{
         font-size: 1.25em; /* we7det 9ays basé 3al font-size */
     }
+    .opa{
+        opacity: 0.7; /*transparance mt3 el text*/
+    }
 
 </style>
 <body id="main-land"> <!-- id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice.
@@ -94,7 +107,7 @@
     <div class="Box">
         <h2>Google</h2>
         <hr>
-        <p class="text-color">Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
+        <p class="text-color opa">Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
     </div>
     <ul>  <!--Ordered List (fiha nwemer 1,2,3 etc)-->
         <li>Z</li>
