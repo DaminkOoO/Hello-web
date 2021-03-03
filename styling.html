@@ -53,10 +53,10 @@
         text-align: center; /* watha7a t5ali balset el text */
         color:rgb(0, 172, 126);
     }
-    h2{
+    .ffs{
         text-transform: uppercase; /* text-transform: tbadel el écriture mt3 el ktiba*/
         /*  
-        ___________________________________________________________________________
+        ____________________________________________________________________________
         |    Value	        |  Result                                              |
         |___________________|______________________________________________________|
         |    lowercase      |	"transform me"                                     |
@@ -65,10 +65,16 @@
         |    initial	    | Use the default value                                |
         |    inherit	    | Use the text-transform value from the parent element |
         |    none	        | Default: Use the original text                       |
-        |___________________________________________________________________________
+        |__________________________________________________________________________|
         
         
         */
+        font-weight: 500; /* 5ochn el klem */
+        line-height: 16px; /* el espace bin les lignes*/
+    }
+
+    .links:hover{ /*el lien wa9t tenzel 3lih  */
+        color:rgb(0, 107, 61) /* el color green*/
     }
     .red-text{ /*nest3mlou el (.) mb3d esm el class bech ndécalirwah*/
         color:rgb(90, 0, 0);
@@ -119,13 +125,17 @@
     <h2 class="red-text">Test :=)</h2> <!--el class hiya 7aja kima el variables-->
     <p class="grey_color" >Hello Web design</p>
     <p class="hello">Hello</p>
-    <h2>☺</h2>
+    <p class="ffs">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
     <img class="small-img border" src="https://i.pinimg.com/originals/e9/1f/2e/e91f2e53a502b8ec1d1eebc66d1acb7f.jpg" alt="screen wallpaper">
     <!--fel class tnajem t3mel zouz classet : t7ot espace bin el zouz classet-->
     <div class="Box">
         <h2>Google</h2>
         <hr>
-        <p class="text-color opa">Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
+        <p class="text-color opa">Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.
+            <hr>
+            <a class="links" href="https://www.google.com" target="_blank">click here to switch to google</a>
+        </p>
     </div>
     <ul>  <!--Ordered List (fiha nwemer 1,2,3 etc)-->
         <li>Z</li>
