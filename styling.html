@@ -18,6 +18,7 @@
     body{ /* el default style mt3 el page */
         color:#B8A; /* default text color */
         font-family: monospace; /*default font*/
+        min-height: 150vh; /* toul el page el minimum */
     }
     .Box{
     background-color: rgb(5, 141, 141);
@@ -99,13 +100,16 @@
         border-width:6px; /* border-width: 3orth el border */
         border-style: solid; /* border-style:naw3 el border */
         border-radius: 25%; /* border-radius: t5ali 7wef mt3 el border mdawrin tnajem tkoun pixels ou pourcentage */
-    
+
     }
     #main-land{ /* nest3mlou el "#" bech nstyliw el id atrb */
     background-color:rgb(41, 41, 41);
     }
-    .img {
-        text-align: center;
+    .center {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        margin:auto; /* center an element*/
     }
     [type='ul']{ /* fel css najemou ntsyliw  ay naw3 kima el ul or checkboxes etc bel "[type ='ely 7ajtek bih'] */
         margin:15px 0 0 10px;
@@ -118,15 +122,39 @@
         opacity: 0.7; /*transparance mt3 el text*/
     }
 
+    .rel{
+        position: relative;
+                    /* net7akmou el position mt3 el element fel relative */
+                    /*kima fi hetha el example ba3ad el element hetha (pos) 50px louta*/
+        top: 50px; /* top = thabat louta| bottom = tal3 el fou9| right = tmechy 3al ysar | left : tmechy 3al ymin*/
+    }
+    .abs{
+        position: absolute; /* tlasa9 el element lel position*/
+        right:15px; /* tba3ad el element mel ymin 15px*/
+    }
+    .fixed{
+        position: fixed;/*T5ali el element thaher 7ata wa9t tscrolli */
+        top:0px;
+        right:20em;
+    }
+    .float{
+        float:right;/*positioning*/
+        width:50% ;
+        z-index: 2; /*t5ali element thaher fou9 element */
+    }
+
 </style>
 <body id="main-land"> <!-- id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice.
                          So please don't give more than one element the same id attribute.-->
-    <h1>Hello web styling</h1>
-    <h2 class="red-text">Test :=)</h2> <!--el class hiya 7aja kima el variables-->
-    <p class="grey_color" >Hello Web design</p>
+    <h1 class="fixed">Hello web styling</h1>
+    <h2 class="red-text abs">Test :=)</h2> <!--el class hiya 7aja kima el variables-->
+    <p class="grey_color rel" >Hello Web design</p>
     <p class="hello">Hello</p>
     <p class="ffs">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
+    <div class="center">
+    <p>FFFAFAF</p>
+    </div>
     <img class="small-img border" src="https://i.pinimg.com/originals/e9/1f/2e/e91f2e53a502b8ec1d1eebc66d1acb7f.jpg" alt="screen wallpaper">
     <!--fel class tnajem t3mel zouz classet : t7ot espace bin el zouz classet-->
     <div class="Box">
@@ -142,5 +170,5 @@
         <li>F</li>
         <li>x</li>
     </ul>
-    
+    <p class="float">Hello World</p>
 </body>
